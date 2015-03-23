@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>2620226046</fileChecksum>
+  <configuration>
+    <name>multicore_m4_blinky</name>
+    <outputs>
+      <file>$PROJ_DIR$\..\..\..\..\software\lpc_core\lpc_chip\chip_5410x\power_lib\iar\lib_power.a</file>
+      <file>$PROJ_DIR$\..\..\..\..\software\lpc_core\lpc_chip\chip_5410x\iar_output\Exe\chip_5410x_lib.a</file>
+      <file>$PROJ_DIR$\..\..\..\..\software\lpc_core\lpc_board\boards_5410x\lpcxpresso_54102\iar_output\Exe\board_lpcxpresso_54102.a</file>
+      <file>$PROJ_DIR$\iar_output\Obj\sysinit.o</file>
+      <file>$PROJ_DIR$\..\..\..\..\software\lpc_core\lpc_chip\chip_5410x\pmu_5410x.h</file>
+      <file>$PROJ_DIR$\iar_output\Obj\m4_blinky.pbd</file>
+      <file>$PROJ_DIR$\iar_output\Obj\m4master_blinky.o</file>
+      <file>$PROJ_DIR$\iar_output\Obj\sysinit.pbi</file>
+      <file>$PROJ_DIR$\iar_output\Obj\m4master_blinky.pbi</file>
+      <file>$PROJ_DIR$\iar_output\Exe\m4_blinky.bin</file>
+      <file>$PROJ_DIR$\iar_output\Obj\iar_startup_lpc5410x.o</file>
+      <file>$PROJ_DIR$\iar_output\Exe\multicore_m4_blinky.out</file>
+      <file>$PROJ_DIR$\..\..\..\..\software\lpc_core\lpc_chip\chip_5410x\hw_i2csd_rom_api.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\software\lpc_core\lpc_chip\chip_5410x\power_lib_5410x.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\software\lpc_core\lpc_chip\chip_common\error.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\software\lpc_core\lpc_chip\chip_5410x\pinint_5410x.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\software\lpc_core\lpc_chip\chip_5410x\hw_i2cmd.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\software\lpc_core\lpc_chip\chip_5410x\hw_i2csd.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\software\lpc_core\lpc_chip\chip_5410x\hw_dmaaltd.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\software\lpc_core\lpc_chip\chip_5410x\hw_dmaaltd_regs.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\software\lpc_core\lpc_chip\chip_5410x\sct_pwm_5410x.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\software\lpc_core\lpc_chip\chip_5410x\romapi_i2cmon.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\software\lpc_core\lpc_chip\chip_5410x\hw_i2c_common.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\software\lpc_core\lpc_chip\chip_common\packing.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\software\lpc_core\lpc_chip\chip_5410x\cpuctrl_5410x.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\software\lpc_core\lpc_chip\chip_5410x\fifo_5410x.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\software\lpc_core\lpc_chip\chip_5410x\utick_5410x.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\software\lpc_core\lpc_chip\chip_5410x\rom_pwr_5410x.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\string.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\software\lpc_core\lpc_chip\chip_5410x\romapi_uart.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\software\lpc_core\lpc_chip\chip_5410x\romapi_5410x.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\software\lpc_core\lpc_chip\chip_5410x\hw_uart_rom_api.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\software\lpc_core\lpc_chip\chip_5410x\config\sys_config.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\software\lpc_core\lpc_chip\chip_5410x\hw_uart.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\software\lpc_core\lpc_chip\chip_5410x\chip.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\software\lpc_core\lpc_chip\chip_5410x\config\cmsis_5410x.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\cmsis_iar.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\examples\multicore\m4master_blinky\m4master_blinky.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\startup\iar_startup_lpc5410x.s</file>
+      <file>$PROJ_DIR$\..\..\..\..\startup\sysinit.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\examples\multicore\m4master_blinky\readme.txt</file>
+      <file>$PROJ_DIR$\..\..\..\..\software\lpc_core\lpc_chip\chip_5410x\mailbox_5410x.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\software\lpc_core\lpc_chip\chip_5410x\pll_5410x.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\software\lpc_core\lpc_board\board_common\board_api.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\software\lpc_core\lpc_chip\chip_common\lpc_types.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\software\lpc_core\lpc_chip\chip_5410x\syscon_5410x.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\software\lpc_core\lpc_chip\chip_5410x\romapi_dma.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\software\lpc_core\lpc_chip\chip_5410x\wwdt_5410x.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\software\lpc_core\lpc_chip\chip_5410x\crc_5410x.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\software\lpc_core\lpc_chip\chip_5410x\romapi_spim.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\software\lpc_core\lpc_chip\chip_5410x\hw_i2cmond.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\software\lpc_core\lpc_chip\chip_5410x\timer_5410x.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\software\lpc_core\lpc_chip\chip_5410x\hw_spisd_rom_api.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\software\lpc_core\lpc_chip\chip_5410x\clock_5410x.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\software\lpc_core\lpc_chip\chip_5410x\mrt_5410x.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\software\lpc_core\lpc_chip\chip_5410x\sct_5410x.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\software\lpc_core\lpc_chip\chip_5410x\rtc_5410x.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\software\lpc_core\lpc_chip\chip_5410x\ritimer_5410x.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\software\lpc_core\lpc_chip\chip_5410x\gpiogroup_5410x.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\software\lpc_core\lpc_chip\chip_common\fpu_init.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\software\lpc_core\lpc_chip\chip_5410x\gpio_5410x.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\software\lpc_core\lpc_chip\chip_5410x\inmux_5410x.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\software\lpc_core\lpc_chip\chip_5410x\iocon_5410x.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xencoding_limits.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\software\lpc_core\lpc_chip\chip_common\iap.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\software\lpc_core\lpc_chip\chip_5410x\hw_spimd.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\software\lpc_core\lpc_chip\chip_5410x\hw_i2cmond_rom_api.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ystdio.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\software\lpc_core\lpc_chip\chip_5410x\hw_spi_common.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\software\lpc_core\lpc_board\boards_5410x\lpcxpresso_54102\board.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\software\lpc_core\lpc_chip\chip_5410x\hw_spisd.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\software\lpc_core\lpc_chip\chip_5410x\hw_spimd_rom_api.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\software\lpc_core\lpc_chip\chip_5410x\cmsis.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\software\lpc_core\lpc_chip\chip_5410x\romapi_i2cs.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\software\lpc_core\lpc_chip\chip_5410x\romapi_adc.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\software\lpc_core\lpc_chip\chip_5410x\romapi_spis.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\software\CMSIS\CMSIS\Include\core_cm4.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\software\CMSIS\CMSIS\Include\core_cmInstr.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\software\CMSIS\CMSIS\Include\core_cmFunc.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\software\CMSIS\CMSIS\Include\core_cm4_simd.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\software\lpc_core\lpc_chip\chip_5410x\hw_adc_rom_api.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\software\lpc_core\lpc_chip\chip_5410x\hw_adc.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\software\lpc_core\lpc_chip\chip_5410x\hw_dmaaltd_rom_api.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\software\lpc_core\lpc_chip\chip_5410x\hw_i2cmd_rom_api.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\software\lpc_core\lpc_chip\chip_5410x\romapi_i2cm.h</file>
+      <file>$TOOLKIT_DIR$\config\linker\NXP\lpc54102j512_m4.icf</file>
+      <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
+      <file>$TOOLKIT_DIR$\lib\m7M_tls.a</file>
+      <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
+      <file>$PROJ_DIR$\iar_output\List\multicore_m4_blinky.map</file>
+      <file>$PROJ_DIR$\iar_output\List\multicore_m4_blinky.log</file>
+    </outputs>
+    <file>
+      <name>$PROJ_DIR$\iar_output\Exe\multicore_m4_blinky.out</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 101 102</file>
+        </tool>
+        <tool>
+          <name>OBJCOPY</name>
+          <file> 9</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 97 2 1 10 0 6 3 98 99 100</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 11 101 102</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\examples\multicore\m4master_blinky\m4master_blinky.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 8</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 6</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 13 16 12 17 14 15 29 19 20 21 18 22 23 24 25 26 27 28 31 38 39 30 33 34 36 37 35 32 4 54 53 59 44 51 55 48 45 52 56 57 58 60 46 47 49 50 61 71 70 69 62 63 64 65 66 67 68 72 73 82 84 96 83 85 86 87 88 89 90 91 92 93 94 95 75 74 81 77 79 78 80 76</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 78 37 49 29 51 33 55 45 27 72 48 68 35 38 32 73 14 82 86 87 39 57 88 89 28 84 90 30 92 93 23 91 52 18 94 19 96 16 95 22 21 58 75 83 17 12 56 74 81 77 85 79 60 31 34 36 50 24 61 46 4 71 15 70 54 69 25 62 53 63 20 64 59 65 26 66 44 67 13 47 80 76</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\startup\iar_startup_lpc5410x.s</name>
+      <outputs>
+        <tool>
+          <name>AARM</name>
+          <file> 10</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\startup\sysinit.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 7</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 3</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 18 22 20 21 14 23 29 15 13 19 16 17 12 24 25 26 27 28 31 38 39 30 33 34 36 37 35 32 4 54 53 59 44 51 55 48 45 52 56 57 58 60 46 47 49 50 61 71 70 69 62 63 64 65 66 67 68 72 73 82 84 96 83 85 86 87 88 89 90 91 92 93 94 95 75 74 81 77 79 78 80 76</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 78 37 49 29 51 33 55 45 27 72 48 68 35 38 32 73 14 82 86 87 39 57 88 89 28 84 90 30 92 93 23 91 52 18 94 19 96 16 95 22 21 58 75 83 17 12 56 74 81 77 85 79 60 31 34 36 50 24 61 46 4 71 15 70 54 69 25 62 53 63 20 64 59 65 26 66 44 67 13 47 80 76</file>
+        </tool>
+      </inputs>
+    </file>
+  </configuration>
+</project>
+
+

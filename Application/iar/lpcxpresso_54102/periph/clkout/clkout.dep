@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>2192429550</fileChecksum>
+  <configuration>
+    <name>iflash_nxp_lpcxpresso_54000</name>
+    <outputs>
+      <file>$PROJ_DIR$\..\..\..\..\startup\iar_startup_lpc5410x.s</file>
+      <file>$PROJ_DIR$\..\..\..\..\examples\periph\clkout\clkout.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\startup\sysinit.c</file>
+      <file>$PROJ_DIR$\iar_output\Obj\iar_startup_lpc5410x.o</file>
+      <file>$PROJ_DIR$\iar_output\Obj\clkout.o</file>
+      <file>$PROJ_DIR$\iar_output\Obj\sysinit.o</file>
+      <file>$PROJ_DIR$\iar_output\Exe\clkout.out</file>
+      <file>$PROJ_DIR$\iar_output\Obj\sysinit.pbi</file>
+      <file>$PROJ_DIR$\iar_output\Obj\clkout.pbi</file>
+      <file>$PROJ_DIR$\iar_output\Exe\clkout.bin</file>
+    </outputs>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\startup\iar_startup_lpc5410x.s</name>
+      <outputs>
+        <tool>
+          <name>AARM</name>
+          <file> 3</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\examples\periph\clkout\clkout.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 8</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 4</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\startup\sysinit.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 7</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 5</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\iar_output\Exe\clkout.out</name>
+      <outputs>
+        <tool>
+          <name>OBJCOPY</name>
+          <file> 9</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 6</file>
+        </tool>
+      </outputs>
+    </file>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>ILINK</tool>
+    </forcedrebuild>
+  </configuration>
+</project>
+
+

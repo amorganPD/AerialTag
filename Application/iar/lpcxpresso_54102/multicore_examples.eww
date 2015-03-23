@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<workspace>
+  <project>
+    <path>$WS_DIR$\multicore\m0_blinky\m0_blinky.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\multicore\m4_blinky\m4_blinky.ewp</path>
+  </project>
+  <batchBuild/>
+</workspace>
+
+

@@ -1,0 +1,412 @@
+###############################################################################
+#
+# IAR ELF Linker V7.40.1.8447/W32 for ARM                 22/Mar/2015  18:16:17
+# Copyright 2007-2015 IAR Systems AB.
+#
+#    Output file  =  
+#        C:\GitHub\AerialTag\Application\iar\lpcxpresso_54102\multicore\m4_blinky\iar_output\Exe\multicore_m4_blinky.out.tmp
+#    Map file     =  
+#        C:\GitHub\AerialTag\Application\iar\lpcxpresso_54102\multicore\m4_blinky\iar_output\List\multicore_m4_blinky.map
+#    Command line =  
+#        C:\GitHub\AerialTag\Application\software\lpc_core\lpc_board\boards_5410x\lpcxpresso_54102\iar_output\Exe\board_lpcxpresso_54102.a
+#        C:\GitHub\AerialTag\Application\software\lpc_core\lpc_chip\chip_5410x\iar_output\Exe\chip_5410x_lib.a
+#        C:\GitHub\AerialTag\Application\iar\lpcxpresso_54102\multicore\m4_blinky\iar_output\Obj\iar_startup_lpc5410x.o
+#        C:\GitHub\AerialTag\Application\software\lpc_core\lpc_chip\chip_5410x\power_lib\iar\lib_power.a
+#        C:\GitHub\AerialTag\Application\iar\lpcxpresso_54102\multicore\m4_blinky\iar_output\Obj\m4master_blinky.o
+#        C:\GitHub\AerialTag\Application\iar\lpcxpresso_54102\multicore\m4_blinky\iar_output\Obj\sysinit.o
+#        -o
+#        C:\GitHub\AerialTag\Application\iar\lpcxpresso_54102\multicore\m4_blinky\iar_output\Exe\multicore_m4_blinky.out.tmp
+#        --map
+#        C:\GitHub\AerialTag\Application\iar\lpcxpresso_54102\multicore\m4_blinky\iar_output\List\multicore_m4_blinky.map
+#        --log libraries,initialization --log_file
+#        C:\GitHub\AerialTag\Application\iar\lpcxpresso_54102\multicore\m4_blinky\iar_output\List\multicore_m4_blinky.log
+#        --config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.2\arm\config\linker\NXP\lpc54102j512_m4.icf" --entry
+#        __iar_program_start --vfe
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A1":  place at 0x00000000 { ro section .intvec };
+"P1":  place in [from 0x00000000 to 0x000002fb] |
+                [from 0x00000300 to 0x0007ffff] { ro };
+"P3":  place in [from 0x02000000 to 0x0200ffff] |
+                [from 0x02010000 to 0x02017fff] { rw, block CSTACK, block HEAP };
+
+  Section                 Kind        Address    Size  Object
+  -------                 ----        -------    ----  ------
+"A1":                                           0x108
+  .intvec                 ro code  0x00000000   0x108  iar_startup_lpc5410x.o [1]
+                                 - 0x00000108   0x108
+
+"P1", part 1 of 2:                                0x0
+  .rodata                 const    0x00000108     0x0  zero_init3.o [8]
+
+"P1", part 2 of 2:                             0x1ae8
+  .text                   ro code  0x00000300   0x700  pll_5410x.o [4]
+  .text                   ro code  0x00000a00    0xee  I64DivMod.o [8]
+  .text                   ro code  0x00000aee    0x22  zero_init3.o [8]
+  .text                   ro code  0x00000b10    0xc4  syscon_5410x.o [4]
+  i.Chip_POWER_SetVoltage
+                          ro code  0x00000bd4    0x32  power_library.o [6]
+  .text                   ro code  0x00000c06     0x2  iar_startup_lpc5410x.o [1]
+  .text                   ro code  0x00000c08     0x2  I64DivZer.o [8]
+  .text                   ro code  0x00000c0a     0x2  iar_startup_lpc5410x.o [1]
+  i.getBROMVersion        ro code  0x00000c0c    0x1c  power_library.o [6]
+  i.__set_voltage         ro code  0x00000c28    0xf4  power_library.o [6]
+  .text                   ro code  0x00000d1c   0x6fa  hw_uart.o [4]
+  .text                   ro code  0x00001416    0x14  memset.o [5]
+  .text                   ro code  0x0000142a     0x2  iar_startup_lpc5410x.o [1]
+  .text                   ro code  0x0000142c    0x66  ABImemset.o [8]
+  .text                   ro code  0x00001492     0x2  iar_startup_lpc5410x.o [1]
+  .text                   ro code  0x00001494   0x234  board.o [3]
+  .text                   ro code  0x000016c8   0x20c  clock_5410x.o [4]
+  .text                   ro code  0x000018d4    0x38  romapi_uart.o [4]
+  .text                   ro code  0x0000190c    0x1c  gpio_5410x.o [4]
+  .text                   ro code  0x00001928    0x42  iocon_5410x.o [4]
+  .text                   ro code  0x0000196a     0x2  iar_startup_lpc5410x.o [1]
+  .text                   ro code  0x0000196c    0xf4  sysinit_5410x.o [4]
+  i.Chip_POWER_GetROMVersion
+                          ro code  0x00001a60     0x4  power_library.o [6]
+  .text                   ro code  0x00001a64   0x1a8  m4master_blinky.o [1]
+  .text                   ro code  0x00001c0c    0x10  chip_5410x.o [4]
+  i.Chip_CPU_CM0Boot      ro code  0x00001c1c    0x28  power_library.o [6]
+  .text                   ro code  0x00001c44    0x58  fpu_init.o [4]
+  .text                   ro code  0x00001c9c    0x50  iar_startup_lpc5410x.o [1]
+  .rodata                 const    0x00001cec    0x30  hw_uart.o [4]
+  .text                   ro code  0x00001d1c    0x28  data_init.o [8]
+  .text                   ro code  0x00001d44    0x22  fpinit_M.o [7]
+  .iar.init_table         const    0x00001d68    0x10  - Linker created -
+  .text                   ro code  0x00001d78     0x2  iar_startup_lpc5410x.o [1]
+  .text                   ro code  0x00001d7c    0x1c  sysinit.o [1]
+  .text                   ro code  0x00001d98    0x1a  cmain.o [8]
+  .text                   ro code  0x00001db2     0x4  low_level_init.o [5]
+  .text                   ro code  0x00001db6     0x4  exit.o [5]
+  .text                   ro code  0x00001dba     0x2  iar_startup_lpc5410x.o [1]
+  .text                   ro code  0x00001dbc     0xa  cexit.o [8]
+  .text                   ro code  0x00001dc6     0x2  iar_startup_lpc5410x.o [1]
+  .text                   ro code  0x00001dc8     0xc  XXexit.o [8]
+  .text                   ro code  0x00001dd4     0xc  cstartup_M.o [8]
+  .rodata                 const    0x00001de0     0x4  board.o [3]
+  .text                   ro code  0x00001de4     0x4  iar_startup_lpc5410x.o [1]
+                                 - 0x00001de8  0x1ae8
+
+"P3":                                           0x460
+  .bss                    zero     0x02000000    0x4c  board.o [3]
+  .bss                    zero     0x0200004c     0x4  m4master_blinky.o [1]
+  .bss                    zero     0x02000050     0x4  m4master_blinky.o [1]
+  .bss                    zero     0x02000054     0x4  chip_5410x.o [4]
+  .bss                    zero     0x02000058     0x4  pll_5410x.o [4]
+  .bss                    zero     0x0200005c     0x1  m4master_blinky.o [1]
+  .bss                    zero     0x0200005d     0x1  m4master_blinky.o [1]
+  CSTACK                           0x02000060   0x400  <Block>
+    CSTACK                uninit   0x02000060   0x400  <Block tail>
+                                 - 0x02000460   0x460
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x5e:
+          0x02000000  0x5e
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                  ro code  ro data  rw data
+    ------                  -------  -------  -------
+C:\GitHub\AerialTag\Application\iar\lpcxpresso_54102\multicore\m4_blinky\iar_output\Obj: [1]
+    iar_startup_lpc5410x.o      364
+    m4master_blinky.o           424                10
+    sysinit.o                    28
+    -------------------------------------------------
+    Total:                      816                10
+
+command line: [2]
+    -------------------------------------------------
+    Total:
+
+board_lpcxpresso_54102.a: [3]
+    board.o                     564        4       76
+    -------------------------------------------------
+    Total:                      564        4       76
+
+chip_5410x_lib.a: [4]
+    chip_5410x.o                 16                 4
+    clock_5410x.o               524
+    fpu_init.o                   88
+    gpio_5410x.o                 28
+    hw_uart.o                 1 786       48
+    iocon_5410x.o                66
+    pll_5410x.o               1 792                 4
+    romapi_uart.o                56
+    syscon_5410x.o              196
+    sysinit_5410x.o             244
+    -------------------------------------------------
+    Total:                    4 796       48        8
+
+dl7M_tln.a: [5]
+    exit.o                        4
+    low_level_init.o              4
+    memset.o                     20
+    -------------------------------------------------
+    Total:                       28
+
+lib_power.a: [6]
+    power_library.o             366
+    -------------------------------------------------
+    Total:                      366
+
+m7M_tls.a: [7]
+    fpinit_M.o                   34
+    -------------------------------------------------
+    Total:                       34
+
+rt7M_tl.a: [8]
+    ABImemset.o                 102
+    I64DivMod.o                 238
+    I64DivZer.o                   2
+    XXexit.o                     12
+    cexit.o                      10
+    cmain.o                      26
+    cstartup_M.o                 12
+    data_init.o                  40
+    zero_init3.o                 34
+    -------------------------------------------------
+    Total:                      476
+
+    Gaps                          2        2
+    Linker created                        16    1 024
+-----------------------------------------------------
+    Grand Total:              7 082       70    1 118
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address   Size  Type      Object
+-----                      -------   ----  ----      ------
+.iar.init_table$$Base   0x00001d68          --   Gb  - Linker created -
+.iar.init_table$$Limit  0x00001d78          --   Gb  - Linker created -
+?main                   0x00001d99         Code  Gb  cmain.o [8]
+Board_Debug_Init        0x000014b7   0x84  Code  Gb  board.o [3]
+Board_Init              0x0000153b   0x46  Code  Gb  board.o [3]
+Board_LED_Set           0x000014a1   0x16  Code  Gb  board.o [3]
+Board_SystemInit        0x00001581   0x72  Code  Gb  board.o [3]
+CSTACK$$Base            0x02000060          --   Gb  - Linker created -
+CSTACK$$Limit           0x02000460          --   Gb  - Linker created -
+Chip_CPU_CM0Boot        0x00001c1d   0x22  Code  Gb  power_library.o [6]
+Chip_Clock_EnablePeriphClock
+                        0x000017d1   0x32  Code  Gb  clock_5410x.o [4]
+Chip_Clock_GetAsyncSysconClockSource
+                        0x00001821   0x18  Code  Gb  clock_5410x.o [4]
+Chip_Clock_GetAsyncSyscon_ClockRate
+                        0x00001839   0x18  Code  Gb  clock_5410x.o [4]
+Chip_Clock_GetAsyncSyscon_ClockRate_NoDiv
+                        0x000016ff   0x42  Code  Lc  clock_5410x.o [4]
+Chip_Clock_GetExtClockInRate
+                        0x000016cf    0x6  Code  Lc  clock_5410x.o [4]
+Chip_Clock_GetExtClockInRate
+                        0x0000031d    0x8  Code  Lc  pll_5410x.o [4]
+Chip_Clock_GetIntOscRate
+                        0x000016c9    0x6  Code  Lc  clock_5410x.o [4]
+Chip_Clock_GetIntOscRate
+                        0x00000317    0x6  Code  Lc  pll_5410x.o [4]
+Chip_Clock_GetMainClockRate
+                        0x00001871   0x16  Code  Gb  clock_5410x.o [4]
+Chip_Clock_GetMain_A_ClockRate
+                        0x00001741   0x32  Code  Gb  clock_5410x.o [4]
+Chip_Clock_GetMain_A_ClockSource
+                        0x000016e7    0x8  Code  Lc  clock_5410x.o [4]
+Chip_Clock_GetMain_B_ClockRate
+                        0x00001773   0x3c  Code  Gb  clock_5410x.o [4]
+Chip_Clock_GetMain_B_ClockSource
+                        0x000016f7    0x8  Code  Lc  clock_5410x.o [4]
+Chip_Clock_GetPllConfig
+                        0x000005ef  0x1d4  Code  Lc  pll_5410x.o [4]
+Chip_Clock_GetRTCOscRate
+                        0x000016d5    0x6  Code  Lc  clock_5410x.o [4]
+Chip_Clock_GetRTCOscRate
+                        0x00000325    0x6  Code  Lc  pll_5410x.o [4]
+Chip_Clock_GetSystemClockRate
+                        0x00001887   0x10  Code  Gb  clock_5410x.o [4]
+Chip_Clock_GetSystemPLLInClockRate
+                        0x000007cf   0x34  Code  Gb  pll_5410x.o [4]
+Chip_Clock_GetSystemPLLOutClockRate
+                        0x00000889   0x3e  Code  Gb  pll_5410x.o [4]
+Chip_Clock_GetSystemPLLOutFromSetup
+                        0x00000803   0x86  Code  Gb  pll_5410x.o [4]
+Chip_Clock_GetSystemPLLOutFromSetupUpdate
+                        0x000007c3    0xc  Code  Lc  pll_5410x.o [4]
+Chip_Clock_GetWDTOSCRate
+                        0x000016db    0x4  Code  Lc  clock_5410x.o [4]
+Chip_Clock_GetWDTOSCRate
+                        0x0000032b    0x6  Code  Lc  pll_5410x.o [4]
+Chip_Clock_IsSystemPLLLocked
+                        0x00000309    0xe  Code  Lc  pll_5410x.o [4]
+Chip_Clock_SetAsyncSysconClockDiv
+                        0x00001995    0x6  Code  Lc  sysinit_5410x.o [4]
+Chip_Clock_SetAsyncSysconClockSource
+                        0x00001803   0x1e  Code  Gb  clock_5410x.o [4]
+Chip_Clock_SetCLKOUTSource
+                        0x000017af   0x22  Code  Gb  clock_5410x.o [4]
+Chip_Clock_SetMainClockSource
+                        0x00001851   0x20  Code  Gb  clock_5410x.o [4]
+Chip_Clock_SetMain_A_ClockSource
+                        0x000016df    0x8  Code  Lc  clock_5410x.o [4]
+Chip_Clock_SetMain_B_ClockSource
+                        0x000016ef    0x8  Code  Lc  clock_5410x.o [4]
+Chip_Clock_SetSysClockDiv
+                        0x0000198f    0x6  Code  Lc  sysinit_5410x.o [4]
+Chip_Clock_SetSystemPLLSource
+                        0x00001987    0x8  Code  Lc  sysinit_5410x.o [4]
+Chip_Clock_SetupPLLData
+                        0x000008c7   0x5e  Code  Gb  pll_5410x.o [4]
+Chip_Clock_SetupSystemPLLPrec
+                        0x00000925   0x8a  Code  Gb  pll_5410x.o [4]
+Chip_GPIO_Init          0x0000190d   0x1c  Code  Gb  gpio_5410x.o [4]
+Chip_IOCON_PinMuxSet    0x00001929   0x14  Code  Lc  iocon_5410x.o [4]
+Chip_IOCON_SetPinMuxing
+                        0x0000193d   0x2e  Code  Gb  iocon_5410x.o [4]
+Chip_MBOX_ClearValueBits
+                        0x00001adf    0x8  Code  Lc  m4master_blinky.o [1]
+Chip_MBOX_GetMutex      0x00001ae7    0x6  Code  Lc  m4master_blinky.o [1]
+Chip_MBOX_Init          0x00001ac9   0x10  Code  Lc  m4master_blinky.o [1]
+Chip_MBOX_SetMutex      0x00001aed    0x8  Code  Lc  m4master_blinky.o [1]
+Chip_MBOX_SetValue      0x00001ad9    0x6  Code  Lc  m4master_blinky.o [1]
+Chip_POWER_GetROMVersion
+                        0x00001a61    0x4  Code  Gb  power_library.o [6]
+Chip_POWER_SetVoltage   0x00000bd5   0x32  Code  Gb  power_library.o [6]
+Chip_SYSCON_Enable_ASYNC_Syscon
+                        0x00000b11   0x16  Code  Gb  syscon_5410x.o [4]
+Chip_SYSCON_PeriphReset
+                        0x00000b27   0x40  Code  Gb  syscon_5410x.o [4]
+Chip_SYSCON_PowerDown   0x00001981    0x6  Code  Lc  sysinit_5410x.o [4]
+Chip_SYSCON_PowerDown   0x00000301    0x8  Code  Lc  pll_5410x.o [4]
+Chip_SYSCON_PowerUp     0x00000b67   0x46  Code  Gb  syscon_5410x.o [4]
+Chip_SYSCON_SetFLASHAccess
+                        0x0000196d   0x14  Code  Lc  sysinit_5410x.o [4]
+Chip_SetupIrcClocking   0x000019db   0x64  Code  Gb  sysinit_5410x.o [4]
+ExtClockIn              0x00001de0    0x4  Data  Gb  board.o [3]
+FindGreatestCommonDivisor
+                        0x000005db   0x14  Code  Lc  pll_5410x.o [4]
+MAILBOX_IRQHandler      0x00001b77   0x16  Code  Gb  m4master_blinky.o [1]
+NVIC_EnableIRQ          0x00001a65   0x14  Code  Lc  m4master_blinky.o [1]
+NVIC_SetPriority        0x00001a79   0x22  Code  Lc  m4master_blinky.o [1]
+ROM_UART_CalBaud        0x000018f3    0xa  Code  Gb  romapi_uart.o [4]
+ROM_UART_Configure      0x000018e9    0xa  Code  Gb  romapi_uart.o [4]
+ROM_UART_GetMemSize     0x000018d5    0xa  Code  Gb  romapi_uart.o [4]
+ROM_UART_Init           0x000018df    0xa  Code  Gb  romapi_uart.o [4]
+ROM_UART_RegisterCB     0x000018fd    0xc  Code  Gb  romapi_uart.o [4]
+Region$$Table$$Base     0x00001d68          --   Gb  - Linker created -
+Region$$Table$$Limit    0x00001d78          --   Gb  - Linker created -
+SysTick_Config          0x00001a9b   0x2e  Code  Lc  m4master_blinky.o [1]
+SysTick_Handler         0x00001b41   0x36  Code  Gb  m4master_blinky.o [1]
+SystemCoreClock         0x02000054    0x4  Data  Gb  chip_5410x.o [4]
+SystemCoreClockUpdate   0x00001c0d   0x10  Code  Gb  chip_5410x.o [4]
+SystemInit              0x00001d7d   0x1c  Code  Gb  sysinit.o [1]
+UART_CalculateBaud      0x0000106f   0x18  Code  Gb  hw_uart.o [4]
+UART_Configure          0x000010b1   0x90  Code  Gb  hw_uart.o [4]
+UART_GetDriverVersion   0x00001411    0x6  Code  Gb  hw_uart.o [4]
+UART_GetMemSize         0x0000106b    0x4  Code  Gb  hw_uart.o [4]
+UART_Handler            0x00001229  0x18c  Code  Gb  hw_uart.o [4]
+UART_Init               0x00001087   0x2a  Code  Gb  hw_uart.o [4]
+UART_RegisterCB         0x000011e7   0x2a  Code  Gb  hw_uart.o [4]
+UART_Rx                 0x000013c1    0xc  Code  Gb  hw_uart.o [4]
+UART_SetControl         0x00001141   0xa6  Code  Gb  hw_uart.o [4]
+UART_Tx                 0x000013b5    0xc  Code  Gb  hw_uart.o [4]
+UART_WaitRX             0x000013df   0x32  Code  Gb  hw_uart.o [4]
+UART_WaitTX             0x000013cd   0x12  Code  Gb  hw_uart.o [4]
+_CalcErr                0x00000dc1   0x3a  Code  Lc  hw_uart.o [4]
+_UART_CalcDiv           0x00000dfb   0x80  Code  Lc  hw_uart.o [4]
+_UART_CalcMul           0x00000e7b   0x80  Code  Lc  hw_uart.o [4]
+_UART_DivClk            0x00000d1d   0x2e  Code  Lc  hw_uart.o [4]
+_UART_GetHighDiv        0x00000d4b   0x2a  Code  Lc  hw_uart.o [4]
+_UART_HandleTxRx        0x00000f13   0x70  Code  Lc  hw_uart.o [4]
+_UART_HandleXfer        0x00000f83   0xc4  Code  Lc  hw_uart.o [4]
+_UART_InvokeCB          0x00000efb   0x18  Code  Lc  hw_uart.o [4]
+_UART_StopRx            0x00001047   0x24  Code  Lc  hw_uart.o [4]
+_UART_Xfer              0x00000d75   0x4c  Code  Lc  hw_uart.o [4]
+__Vectors               0x00000000          --   Gb  iar_startup_lpc5410x.o [1]
+__Vectors_End           0x000000f4         Data  Gb  iar_startup_lpc5410x.o [1]
+__Vectors_Size {Abs}    0x000000f4          --   Gb  iar_startup_lpc5410x.o [1]
+__aeabi_ldiv0           0x00000c09         Code  Gb  I64DivZer.o [8]
+__aeabi_memset          0x0000142d         Code  Gb  ABImemset.o [8]
+__aeabi_uldivmod        0x00000a01         Code  Gb  I64DivMod.o [8]
+__cmain                 0x00001d99         Code  Gb  cmain.o [8]
+__exit                  0x00001dc9         Code  Gb  XXexit.o [8]
+__iar_Memset            0x0000142d         Code  Gb  ABImemset.o [8]
+__iar_Memset_word       0x00001435         Code  Gb  ABImemset.o [8]
+__iar_data_init3        0x00001d1d   0x28  Code  Gb  data_init.o [8]
+__iar_init_vfp          0x00001d45         Code  Gb  fpinit_M.o [7]
+__iar_program_start     0x00001dd5         Code  Gb  cstartup_M.o [8]
+__iar_zero_init3        0x00000aef   0x22  Code  Gb  zero_init3.o [8]
+__low_level_init        0x00001db3    0x4  Code  Gb  low_level_init.o [5]
+__set_voltage           0x00000c29   0xe0  Code  Lc  power_library.o [6]
+__vector_table          0x00000000         Data  Gb  iar_startup_lpc5410x.o [1]
+__vector_table_0x1c     0x0000001c         Data  Gb  iar_startup_lpc5410x.o [1]
+_call_main              0x00001da5         Code  Gb  cmain.o [8]
+_exit                   0x00001dbd         Code  Gb  cexit.o [8]
+_main                   0x00001daf         Code  Gb  cmain.o [8]
+cnt25                   0x0200004c    0x4  Data  Lc  m4master_blinky.o [1]
+curPllRate              0x02000058    0x4  Data  Lc  pll_5410x.o [4]
+exit                    0x00001db7    0x4  Code  Gb  exit.o [5]
+findPllMMult            0x000005bb   0x20  Code  Gb  pll_5410x.o [4]
+findPllPostDiv          0x0000059f   0x1c  Code  Gb  pll_5410x.o [4]
+findPllPreDiv           0x00000585   0x1a  Code  Gb  pll_5410x.o [4]
+fpuInit                 0x00001c45   0x58  Code  Gb  fpu_init.o [4]
+getBROMVersion          0x00000c0d   0x16  Code  Lc  power_library.o [6]
+ledToggleBit            0x00001b0d   0x12  Code  Lc  m4master_blinky.o [1]
+main                    0x00001b8d   0x4c  Code  Gb  m4master_blinky.o [1]
+memset                  0x00001417   0x14  Code  Gb  memset.o [5]
+mutexGive               0x00001b03    0xa  Code  Lc  m4master_blinky.o [1]
+mutexTake               0x00001af5    0xe  Code  Lc  m4master_blinky.o [1]
+myCoreBox               0x0200005c    0x1  Data  Lc  m4master_blinky.o [1]
+otherCoreBox            0x0200005d    0x1  Data  Lc  m4master_blinky.o [1]
+pllDecodeM              0x000004ad   0x62  Code  Lc  pll_5410x.o [4]
+pllDecodeN              0x00000379   0x68  Code  Lc  pll_5410x.o [4]
+pllDecodeP              0x00000419   0x52  Code  Lc  pll_5410x.o [4]
+pllEncodeM              0x0000046b   0x42  Code  Lc  pll_5410x.o [4]
+pllEncodeN              0x00000331   0x48  Code  Lc  pll_5410x.o [4]
+pllEncodeP              0x000003e1   0x38  Code  Lc  pll_5410x.o [4]
+pllFindSel              0x0000050f   0x76  Code  Lc  pll_5410x.o [4]
+setupFlashClocks        0x0000199b   0x40  Code  Lc  sysinit_5410x.o [4]
+sharedLEDStates         0x02000050    0x4  Data  Gb  m4master_blinky.o [1]
+uartrom_api             0x00001cec   0x30  Data  Gb  hw_uart.o [4]
+updateLEDStates         0x00001b1f   0x22  Code  Lc  m4master_blinky.o [1]
+
+
+[1] = C:\GitHub\AerialTag\Application\iar\lpcxpresso_54102\multicore\m4_blinky\iar_output\Obj
+[2] = command line
+[3] = board_lpcxpresso_54102.a
+[4] = chip_5410x_lib.a
+[5] = dl7M_tln.a
+[6] = lib_power.a
+[7] = m7M_tls.a
+[8] = rt7M_tl.a
+
+  7 082 bytes of readonly  code memory
+     70 bytes of readonly  data memory
+  1 118 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
